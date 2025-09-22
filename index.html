@@ -1,63 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>COMPREHENSIBLE — Headline</title>
-    <style>
-        /* Light grey background, full-bleed */
-        html, body {
-            height: 100%;
-            margin: 0;
-            background-color: #dbd9d9; /* light grey */
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* Center container */
-        .wrap {
-            min-height: 100%;
-            display: flex;
-            align-items: center; /* vertical centering */
-            justify-content: center; /* horizontal centering */
-            padding: 2rem;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        /* Headline styling */
-        .headline {
-            font-family: "Helvetica", "Arial", sans-serif; /* prefer Helvetica */
-            font-weight: 400;
-            color: #004d00; /* dark green */
-            /* Responsive, very large size but clamped for small/large screens */
-            font-size: clamp(48px, 12vw, 220px);
-            line-height: 0.95; /* tighten lines slightly */
-            letter-spacing: 0.005em;
-            margin: 0;
-            word-break: break-word;
-        }
-
-        /* Keep each required line on its own row and preserve case/punctuation */
-        .headline .line {
-            display: block
-        }
-
-        /* Improve accessibility: ensure sufficient contrast and allow zooming */
-        @media (prefers-contrast: high) {
-            .headline {
-                font-weight: 800
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Comprehensible</title>
+    <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<div class="wrap">
-    <h1 class="headline" aria-label="COMPREHENSIBLE. Move fast, don't break things.">
-        <span class="line">Comprehensible.</span>
-        <span class="line">Move fast, don't</span>
-        <span class="line">break things.</span>
-    </h1>
+<div class="header">
+    ■ Comprehensible
 </div>
+<div class="hero">
+    <div>Move fast, don't<br> break things.</div>
+    <div class="subhero">
+        Intuitive, non-invasive reliability for code and ML/AI. Verification and sense-making.
+    </div>
+    <div class="hero_image">
+        <img src="img/running_elephant.gif" alt="Running & dodging porcelain elephant animation" width="384"
+             height="192">
+    </div>
+</div>
+<div class="three_pane">
+    <div class="card">
+        <div class="card_header">non-invasive</div>
+        <div class="card_text">Your existing code, ML and agents remain untouched.</div>
+        <div class="card_image">
+            <img src="img/snow.gif" alt="Code is covered with snow and remains untouched" width="144">
+        </div>
+    </div>
+    <div class="card">
+        <div class="card_header">verification</div>
+        <div class="card_text">Specify expected behaviors concisely, and we will validate them formally.
+        </div>
+        <div class="card_image">
+            <div class="card_image">
+                <img src="img/verification.gif" alt="Code is verified"
+                     width="288">
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card_header">unusual patterns</div>
+        <div class="card_text">We detect unusual patterns and help you make sense of them.</div>
+        <div class="card_image">
+            <div class="card_image">
+                <img src="img/anomaly.gif" alt="Running & dodging porcelain elephant animation"
+                     width="288">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact_section">
+    <div class="section_header">
+        get in touch
+    </div>
+    <div class="contacts">
+        <a href="mailto:admin@swarmis.us">admin@swarmis.us</a>
+    </div>
+</div>
+<!--<div class="description">-->
+<!--    A more detailed project description goes here...-->
+<!--</div>-->
+<!--<div class="section_header">-->
+<!--    Intro-->
+<!--</div>-->
 </body>
 </html>
