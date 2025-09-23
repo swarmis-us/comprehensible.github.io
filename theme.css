@@ -135,11 +135,11 @@ body {
 }
 
 .card_image {
-    width: fit-content; /* ✅ scales with container */
-    height: auto; /* keeps aspect ratio */
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     margin-top: 0.5rem;
 }
 
