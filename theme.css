@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     font-family: NeueMontreal, Arial, sans-serif; /* set a clean, readable font */
     font-weight: normal;
@@ -56,11 +56,11 @@ body {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    font-family: NeueMontreal, Arial, sans-serif; /* set a clean, readable font */
+    font-family: NeueMontrealBold, Arial, sans-serif; /* set a clean, readable font */
     font-size: 2.5rem;
     padding-left: 2rem;
     padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
     gap: 1rem;
 }
 
@@ -84,7 +84,7 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: NeueMontreal, Arial, sans-serif;
     gap: 0.5rem;
@@ -94,7 +94,7 @@ body {
     width: fit-content;
     font-family: Mondwest, Arial, sans-serif;
     font-weight: normal;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .card_text {
@@ -121,7 +121,7 @@ body {
         flex-direction: row;
         justify-content: left;
         align-items: center;
-        font-family: NeueMontreal, Arial, sans-serif; /* set a clean, readable font */
+        font-family: NeueMontrealBold, Arial, sans-serif; /* set a clean, readable font */
         font-size: 4rem;
         padding-left: 4rem;
         padding-top: 1rem;
@@ -165,7 +165,7 @@ body {
     .card {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         font-family: NeueMontreal, Arial, sans-serif;
         gap: 0.5rem;
@@ -189,7 +189,7 @@ body {
         width: fit-content;
         font-family: Mondwest, Arial, sans-serif;
         font-weight: normal;
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
 
     .card_text {
@@ -223,7 +223,7 @@ body {
         flex-direction: row;
         justify-content: left;
         font-family: Mondwest, Arial, sans-serif;
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
 
     .content {
@@ -283,7 +283,7 @@ body {
         flex-direction: row;
         justify-content: left;
         font-family: Mondwest, Arial, sans-serif;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .content {
@@ -343,7 +343,7 @@ body {
         flex-direction: row;
         justify-content: left;
         font-family: Mondwest, Arial, sans-serif;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .content {
@@ -403,7 +403,7 @@ body {
         flex-direction: row;
         justify-content: left;
         font-family: Mondwest, Arial, sans-serif;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .content {
