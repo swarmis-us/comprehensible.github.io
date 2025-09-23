@@ -205,7 +205,7 @@ body {
         margin: 1rem;
     }
 
-    .contact_section {
+    .content_section {
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -222,7 +222,7 @@ body {
         font-size: 4.5rem;
     }
 
-    .contacts {
+    .content {
         width: 100%;
         font-family: NeueMontreal, Arial, sans-serif;
         font-size: 4rem;
@@ -325,7 +325,7 @@ body {
         align-items: center;
     }
 
-    .contact_section {
+    .content_section {
         display: flex;
         flex-direction: column;
         width: 95%;
@@ -342,7 +342,7 @@ body {
         font-size: 2.5rem;
     }
 
-    .contacts {
+    .content {
         width: 100%;
         font-family: NeueMontreal, Arial, sans-serif;
         font-size: 2rem;
@@ -385,7 +385,7 @@ body {
         align-items: center;
     }
 
-    .contact_section {
+    .content_section {
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -402,7 +402,7 @@ body {
         font-size: 2.5rem;
     }
 
-    .contacts {
+    .content {
         width: 100%;
         font-family: NeueMontreal, Arial, sans-serif;
         font-size: 2rem;
@@ -445,7 +445,7 @@ body {
         align-items: center;
     }
 
-    .contact_section {
+    .content_section {
         display: flex;
         flex-direction: column;
         width: 60%;
@@ -462,7 +462,7 @@ body {
         font-size: 2.5rem;
     }
 
-    .contacts {
+    .content {
         width: 100%;
         font-family: NeueMontreal, Arial, sans-serif;
         font-size: 2rem;
