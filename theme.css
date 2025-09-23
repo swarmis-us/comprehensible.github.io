@@ -67,16 +67,17 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    max-width: 80%;
+    gap: 1rem;
+    max-width: 40%;
     font-family: Mondwest, Arial, sans-serif;
     font-weight: bold;
     font-size: 6rem;
     line-height: 6rem;
+    align-items: center;
 }
 
 .subhero {
-    max-width: 60%;
+    max-width: 80%;
     font-family: NeueMontreal, Arial, sans-serif;
     font-size: 2.5rem;
     font-weight: normal;
@@ -102,21 +103,41 @@ body {
     line-height: 3rem;
 }
 
-.three_pane {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
+@media (max-width: 1200px) {
+    .three_pane {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .three_pane {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: space-around;
+    align-items: center;
     font-family: NeueMontreal, Arial, sans-serif;
     gap: 0.5rem;
+}
+
+.card_textual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card_header {
