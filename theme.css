@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'NeueMontreal';
-    src: url('fonts/PPNeueMontreal-Thin.woff') format('woff'), url('fonts/PPNeueMontreal-Thin.woff2') format('woff2');
+    src: url('fonts/PPNeueMontreal-Light.woff') format('woff'), url('fonts/PPNeueMontreal-Light.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -48,6 +48,7 @@ body {
     line-height: 1.5; /* improve text readability */
     background-color: #F9FAFB; /* #F0FFF0 #FFC107; #77DD77 #fff; white background (default, but explicit) */
     color: #2D2D2D; /* black text */
+    padding-bottom: 4rem;
 }
 
 .header {
@@ -119,7 +120,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 @media (max-width: 1200px) {
