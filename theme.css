@@ -46,8 +46,8 @@ body {
     font-family: NeueMontreal, Arial, sans-serif; /* set a clean, readable font */
     font-weight: normal;
     line-height: 1.5; /* improve text readability */
-    background-color: #F0FFF0; /* #FFC107; #F0FFF0 #77DD77 #fff; white background (default, but explicit) */
-    color: #000; /* black text */
+    background-color: #F9FAFB; /* #F0FFF0 #FFC107; #77DD77 #fff; white background (default, but explicit) */
+    color: #2D2D2D; /* black text */
 }
 
 .header {
