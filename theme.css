@@ -283,7 +283,7 @@ body {
     .content_section {
         display: flex;
         flex-direction: column;
-        width: 95%;
+        width: 60%;
         margin: 2rem;
         align-items: center;
     }
@@ -343,7 +343,7 @@ body {
     .content_section {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 50%;
         margin: 2rem;
         align-items: center;
     }
@@ -403,7 +403,7 @@ body {
     .content_section {
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 40%;
         margin: 2rem;
         align-items: center;
     }
