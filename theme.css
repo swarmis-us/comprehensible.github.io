@@ -72,6 +72,7 @@ body {
 
 .hero_header {
     width: 90%;
+    padding-bottom: 1rem;
 }
 
 .hero_image {
@@ -155,8 +156,13 @@ body {
         align-items: baseline;
     }
 
+    .hero_header {
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+
     .subhero {
-        max-width: 90%;
+        max-width: 100%;
         font-family: NeueMontreal, Arial, sans-serif;
         font-size: 4rem;
         font-weight: normal;
@@ -202,7 +208,7 @@ body {
     }
 
     .card_text {
-        width: 46rem;
+        width: 100%;
         font-family: NeueMontreal, Arial, sans-serif;
         font-size: 4rem;
         font-weight: normal;
