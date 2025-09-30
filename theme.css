@@ -14,6 +14,13 @@
 }
 
 @font-face {
+    font-family: 'NeueMachina';
+    src: url('fonts/PPNeueMachina-InktrapUltrabold.woff') format('woff'), url('fonts/PPNeueMachina-InktrapUltrabold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'NeueMontreal';
     src: url('fonts/PPNeueMontreal-Light.woff') format('woff'), url('fonts/PPNeueMontreal-Light.woff2') format('woff2');
     font-weight: normal;
@@ -21,7 +28,7 @@
 }
 
 @font-face {
-    font-family: 'NeueMontrealBold';
+    font-family: 'NeueMontreal';
     src: url('fonts/PPNeueMontreal-Regular.woff') format('woff'), url('fonts/PPNeueMontreal-Regular.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
@@ -49,20 +56,6 @@ body {
     background-color: #F9FAFB; /* #F0FFF0 #FFC107; #77DD77 #fff; white background (default, but explicit) */
     color: #2D2D2D; /* black text */
     padding-bottom: 4rem;
-}
-
-.header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    font-family: NeueMontrealBold, Arial, sans-serif; /* set a clean, readable font */
-    font-size: 2.5rem;
-    padding-left: 4rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    gap: 1rem;
 }
 
 .logo {
@@ -124,16 +117,24 @@ body {
     padding-top: 3rem;
 }
 
+.list_image {
+    img {
+        width: 100%;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
 @media (max-width: 1200px) {
     .header {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: row;
         justify-content: left;
         align-items: center;
         font-family: NeueMontrealBold, Arial, sans-serif; /* set a clean, readable font */
         font-size: 4rem;
-        padding-left: 6rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
         gap: 1rem;
@@ -252,6 +253,19 @@ body {
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
+    .header {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        font-family: NeueMontrealBold, Arial, sans-serif; /* set a clean, readable font */
+        font-size: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+    }
+
     .hero {
         display: flex;
         flex-direction: column;
@@ -312,6 +326,19 @@ body {
 }
 
 @media (min-width: 1500px) and (max-width: 1800px) {
+    .header {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        font-family: NeueMontrealBold, Arial, sans-serif; /* set a clean, readable font */
+        font-size: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+    }
+
     .hero {
         display: flex;
         flex-direction: column;
@@ -372,6 +399,19 @@ body {
 }
 
 @media (min-width: 1800px) {
+    .header {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        font-family: NeueMontrealBold, Arial, sans-serif; /* set a clean, readable font */
+        font-size: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+    }
+
     .hero {
         display: flex;
         flex-direction: column;
