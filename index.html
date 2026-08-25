@@ -6,7 +6,7 @@
     <meta name="description" content="Reliability infrastructure for physical AI."/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <title>Comprehensible — Reliability for Physical AI</title>
-  <link rel="stylesheet" crossorigin href="/assets/index-D32NqhZC.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-DMJJFeap.css">
 </head>
 <body>
 <main>
@@ -51,9 +51,10 @@
             <h2 id="product-title">Finding issues starts with defining nominal behavior</h2>
             <p class="product-summary">
                 In the physical world, that is harder than it sounds.<br class="product-summary-break">
-                Even a simple handoff requires defining what counts as<br class="product-summary-break">
-                grasping and holding, and when it is safe to release —<br class="product-summary-break">
-                none of it can be reduced to a simple rule.
+                Even “turn left” requires deciding when the turn begins and ends,<br class="product-summary-break">
+                and relating changes in position, orientation,<br class="product-summary-break">
+                velocity and acceleration as they unfold over time.
+                <span class="product-summary-answer">We built a solution for this.</span>
             </p>
         </header>
 
@@ -104,21 +105,21 @@ control.yaw_response</code></pre>
                 <div class="sample-example">
                     <div class="sample-prompt">
                         <span>Example Prompt</span>
-                        <p>Flag a failed handoff when an unusual change in gripper load is followed by the robot releasing the object before a person takes its weight.</p>
+                        <p>Flag an interrupted motion when an unusual change in motor load is followed by the robot stopping before it reaches its target.</p>
                     </div>
                     <div class="sample-code">
                         <span>Reviewable specification</span>
-                        <pre><code>[event.anomaly:load_change]
-robot.gripper.force
+                        <pre><code>[event.anomaly:motor_load]
+robot.motor.load
 
-[event:handoff]
-grasped = robot.gripper.holding
-early_release = !robot.gripper.holding && !person.hand.holding
+[event:motion]
+started = robot.motion.active
+incomplete = robot.motion.stopped && !robot.target.reached
 
-[event.sequence.30s:failed_handoff]
-handoff.grasped -> load_change -> handoff.early_release</code></pre>
+[event.sequence.30s:interrupted_motion]
+motion.started -> motor_load -> motion.incomplete</code></pre>
                     </div>
-                    <p class="sample-caption">Robotic handoff monitoring · Combining anomaly detection, state and sequence into one explainable failure condition</p>
+                    <p class="sample-caption">Robot motion monitoring · Combining anomaly detection, state and sequence into one explainable failure condition</p>
                 </div>
             </div>
         </section>
@@ -235,7 +236,7 @@ handoff.grasped -> load_change -> handoff.early_release</code></pre>
                     </figure>
                     <figure>
                         <img src="/images/foxglove-investigation.webp" alt="Robot telemetry being investigated in Foxglove on a workstation" width="2520" height="1420" loading="lazy" decoding="async">
-                        <figcaption>Live investigation · Foxglove</figcaption>
+                        <figcaption>Field investigation · Foxglove</figcaption>
                     </figure>
                 </div>
             </div>
