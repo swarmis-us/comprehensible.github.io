@@ -1,131 +1,269 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/logo.svg" as="image"/><link rel="preload" href="/orchestration-v3.png" as="image"/><link rel="preload" href="/motion-orchestrator.png" as="image"/><link rel="preload" href="/multi-device-timeline.png" as="image"/><link rel="preload" href="/real-robot-v2.jpg" as="image"/><link rel="preload" href="/real-lidar.png" as="image"/><link rel="preload" href="/real-camera-rig-v2.jpg" as="image"/><link rel="preload" href="/tandee-hs-nailing-square.jpg" as="image"/><link rel="preload" href="/reliability-diagnostics.jpg" as="image"/><link rel="preload" href="/reliability-friction-model.jpg" as="image"/><link rel="stylesheet" href="/_next/static/css/index.BA313Bxd.css" data-rsc-css-href="/_next/static/css/index.BA313Bxd.css" data-precedence="vite-rsc/importer-resources"/><link rel="modulepreload" fetchPriority="low" href="/_next/static/chunks/index-CGzTkIP-.js"/><script src="/_next/static/chunks/rolldown-runtime-C60lm6uB.js" type="module" async=""></script><script src="/_next/static/chunks/framework-BgSIrAUN.js" type="module" async=""></script><link rel="modulepreload" href="/_next/static/chunks/layout-segment-context-Dg7LHgK5.js" crossorigin=""/><link rel="preload" href="/reliability-spec.png" as="image"/><link rel="preload" href="/reliability-workstation-enhanced.png" as="image"/><link rel="preload" href="/reliability-point-cloud.png" as="image"/><link rel="preload" href="/reliability-signal-map.png" as="image"/><title>Comprehensible — Reliable robotic orchestration for work previously impractical to automate</title><meta name="description" content="Control and orchestration for physical workflows across robots, sensors, AI models and business systems — built for work previously impractical to automate."/><meta property="og:title" content="Reliable robotic orchestration for work previously impractical to automate"/><meta property="og:description" content="Control and orchestration for physical workflows across robots, sensors, AI models and business systems."/><meta property="og:url" content="https://comprehensible.ai"/><meta property="og:site_name" content="Comprehensible"/><meta property="og:type" content="website"/><meta property="og:image" content="https://comprehensible.ai/og-logo.png"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:alt" content="Comprehensible"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Reliable robotic orchestration for work previously impractical to automate"/><meta name="twitter:description" content="Control and orchestration for physical workflows across robots, sensors, AI models and business systems."/><meta name="twitter:image" content="https://comprehensible.ai/og-logo.png"/><link rel="shortcut icon" href="/favicon.svg"/><link rel="icon" href="/favicon.svg"/><link rel="apple-touch-icon" href="/og-logo.png"/><script>Object.assign(((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}),{params:{},nav:{"pathname":"/","searchParams":[]}})</script><link rel="modulepreload" href="/_next/static/chunks/index-CGzTkIP-.js" />
-<link rel="preload" href="/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-013b2f2f.woff2" as="font" type="font/woff2" crossorigin />
-<style data-vinext-fonts>/* cyrillic-ext */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-ff2310f5.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-875ccdd4.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-52306abf.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-001175b1.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Reliability infrastructure for physical AI."/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <title>Comprehensible — Reliability for Physical AI</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-D32NqhZC.css">
+</head>
+<body>
+<main>
+    <section class="hero" aria-labelledby="hero-title">
+        <header class="nav">
+            <a class="wordmark" href="/" aria-label="Comprehensible home">
+                <img src="/Logo.svg" alt="" width="50" height="29">
+            </a>
+            <span class="nav-label">Comprehensible</span>
+        </header>
 
-@font-face {
-  font-family: 'Geist Fallback';
-  src: local("Arial");
-  ascent-override: 95.94%;
-  descent-override: 28.16%;
-  line-gap-override: 0.00%;
-  size-adjust: 104.76%;
-}
+        <div class="hero-content">
+            <p class="eyebrow">When AI operates in the real world, the stakes are high</p>
+            <h1 id="hero-title">Reliability for<br><span>Physical AI</span></h1>
+            <p class="lead">
+                How soon will you know<br class="narrow-break"> when your robot fails?<br>
+                How fast can you recover?
+            </p>
+            <p class="supporting-copy">
+                We built reliability solutions at world-leading companies.<br class="supporting-break">
+                Now we’re bringing the same principles and technology to physical AI —<br class="supporting-break">
+                adapted to the scale and demands of the real world.
+            </p>
+            <a class="hero-cta" href="#product">
+                <span>Explore the product</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h13M13 6l6 6-6 6"/>
+                </svg>
+            </a>
+        </div>
 
-.__font_geist_1l7o1rv { font-family: 'Geist', 'Geist Fallback'; font-style: normal; }
+        <p class="scroll-note" aria-hidden="true">Test · Verify · Monitor · Recover</p>
+    </section>
 
-.__variable_geist_1l7o1rv { --font-geist-sans: 'Geist', 'Geist Fallback'; }
+    <section class="product" id="product" aria-labelledby="product-title">
+        <header class="product-header">
+            <div class="product-stakes">
+                <p>Move fast. Don’t learn<br>the hard way.</p>
+                <p>Catch rare failures early — because one serious incident is one too many.</p>
+            </div>
+            <p class="section-kicker">The Product</p>
+            <h2 id="product-title">Finding issues starts with defining nominal behavior</h2>
+            <p class="product-summary">
+                In the physical world, that is harder than it sounds.<br class="product-summary-break">
+                Even a simple handoff requires defining what counts as<br class="product-summary-break">
+                grasping and holding, and when it is safe to release —<br class="product-summary-break">
+                none of it can be reduced to a simple rule.
+            </p>
+        </header>
 
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-f6b33328.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-44e03052.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* symbols2 */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-0638449e.woff2) format('woff2');
-  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-971fb274.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-44745446.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/_next/static/_vinext_fonts/geist-mono-00e989178794/geist-mono-013b2f2f.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+        <section class="product-part" aria-labelledby="specification-title">
+            <div class="part-index" aria-hidden="true">01</div>
+            <div class="part-copy composition-copy">
+                <p class="part-label">Specification</p>
+                <h3 id="specification-title">Reliability needs answers you can reproduce, explain and verify</h3>
+                <p>
+                    An LLM helps engineers turn plain language into a formal, executable description of expected behavior — a specification. Specifications can combine temporal and spatial patterns, probabilistic methods, anomaly detection and learned system dynamics. At runtime, the specification — not the LLM — evaluates the data, so results are reproducible and verifiable. The specification is also the explanation: every result traces back to the definitions, relationships and data that produced it.
+                </p>
+                <ul class="part-details">
+                    <li>Compose simple definitions into complex behaviors</li>
+                    <li>Inspect every intermediate definition and relationship</li>
+                    <li>Validate specifications before execution</li>
+                    <li>Review changes as a normal code diff</li>
+                </ul>
+                <div class="composition-diagram" aria-label="Sensor readings combine into relationships, behaviors and scenarios">
+                    <p>From simple to complex</p>
+                    <ol>
+                        <li><span>01</span>Sensor readings</li>
+                        <li><span>02</span>Relationships</li>
+                        <li><span>03</span>Behaviors</li>
+                        <li><span>04</span>Scenarios</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="product-visual specification-sample" aria-label="Natural-language prompts and their resulting executable specifications">
+                <div class="sample-example">
+                    <div class="sample-prompt">
+                        <span>Example Prompt</span>
+                        <p>Define nominal flight-control behavior: measured roll, pitch and yaw should follow their commanded values over time.</p>
+                    </div>
+                    <div class="sample-code">
+                        <span>Reviewable specification</span>
+                        <pre><code>[metric.causality:control]
+roll_response = roll.commanded -&gt; roll.measured
+pitch_response = pitch.commanded -&gt; pitch.measured
+yaw_response = yaw.commanded -&gt; yaw.measured
 
-@font-face {
-  font-family: 'Geist Mono Fallback';
-  src: local("Arial");
-  ascent-override: 74.67%;
-  descent-override: 21.92%;
-  line-gap-override: 0.00%;
-  size-adjust: 134.59%;
-}
+[spec:control_nominal]
+control.roll_response
+control.pitch_response
+control.yaw_response</code></pre>
+                    </div>
+                    <p class="sample-caption">Real-world UAV monitoring · Discovering causal relationships and combining them into nominal control behavior</p>
+                </div>
+                <div class="sample-example">
+                    <div class="sample-prompt">
+                        <span>Example Prompt</span>
+                        <p>Flag a failed handoff when an unusual change in gripper load is followed by the robot releasing the object before a person takes its weight.</p>
+                    </div>
+                    <div class="sample-code">
+                        <span>Reviewable specification</span>
+                        <pre><code>[event.anomaly:load_change]
+robot.gripper.force
 
-.__font_geist_mono_1wmokar { font-family: 'Geist Mono', 'Geist Mono Fallback'; font-style: normal; }
+[event:handoff]
+grasped = robot.gripper.holding
+early_release = !robot.gripper.holding && !person.hand.holding
 
-.__variable_geist_mono_1wmokar { --font-geist-mono: 'Geist Mono', 'Geist Mono Fallback'; }
-</style>
-</head><body class="__variable_geist_1l7o1rv __variable_geist_mono_1wmokar"><main id="top"><nav class="nav shell" aria-label="Primary navigation"><a class="brand" href="#top" aria-label="Comprehensible home"><img class="brandLogo" src="/logo.svg" alt="" aria-hidden="true"/><span>Comprehensible</span></a><div class="navLinks"><a href="#product">Product</a><a href="#reliability">Reliability</a><a href="#build">Build with us</a></div><a class="navCta" href="mailto:admin@swarmis.us?subject=Tell%20us%20about%20your%20process">Talk to us <span aria-hidden="true">↗</span></a></nav><section class="hero shell"><p class="eyebrow"><span></span> Physical automation, made comprehensible</p><h1>Reliable robotic orchestration<br/><em>for work previously impractical to automate.</em></h1><div class="heroBottom"><p class="heroStatement">Comprehensible is a control and orchestration system for physical workflows across robots, sensors, AI models and business systems — with safety, monitoring and recovery built in.</p><div class="heroDetail"><p>Better perception and decision-making are opening automation to changing, lower-volume work — from smaller manufacturers and creative studios to construction sites and farms. Comprehensible makes these systems practical to set up and adapt without a dedicated team of robotics specialists.</p><a class="button primary" href="#product">Explore the product <span aria-hidden="true">↓</span></a></div></div></section><section class="shift" id="product"><div class="shell shiftGrid"><p class="sectionNumber">01 / THE PRODUCT</p><h2>Automation no longer has to mean a rigid, single-purpose production line.</h2><p>From device drivers and motion control to perception and workflow logic, Comprehensible connects the full stack into adaptable workflows. Smaller manufacturers, workshops, wineries, breweries and creative teams can design, test and operate changing jobs without creating a custom integration each time.</p></div></section><section class="product shell"><div class="compactFeatures" aria-label="Product capabilities"><div><span>+</span><h3>Compose the whole workflow</h3><p>Connect live sensor data, spatial understanding, decisions and robot actions.</p></div><div><span>+</span><h3>Keep the real system in view</h3><p>Observe connected hardware while designing, testing and adjusting the job.</p></div><div><span>+</span><h3>Build the interface for the task</h3><p>Combine the controls, status, simulation and timing that operators actually need.</p></div></div><div class="productExampleHeader"><span>REAL-WORLD EXAMPLE</span><h3>Bringing robotics into a product filming studio</h3></div><div class="productGallery"><figure class="productFrame productFrameMain"><img src="/orchestration-v3.png" alt="Comprehensible orchestrator for a real product filming studio, connecting live LiDAR data, scene recognition, a user prompt, camera trajectory and robot execution while showing current hardware state"/><figcaption><span>01</span> Design the workflow while observing the current state of connected hardware</figcaption></figure><div class="productGallerySide"><figure class="productFrame"><img src="/motion-orchestrator.png" alt="Comprehensible interface showing a robot arm, a natural-language motion assistant, the generated motion program and its timeline"/><figcaption><span>02</span> Natural-language robot motion, visualized and editable</figcaption></figure><figure class="productFrame"><img src="/multi-device-timeline.png" alt="A task-specific interface created in Comprehensible, combining a multi-device simulation, live status and a shared motion timeline"/><figcaption><span>03</span> A task-specific control interface built in the platform</figcaption></figure></div></div><section class="realSystems" aria-labelledby="real-systems-title"><div class="realSystemsIntro"><span>CONNECTED HARDWARE / REAL SYSTEMS</span><h3 id="real-systems-title">The interface is connected to real machines and real sensor data.</h3></div><div class="realSystemsGrid"><figure class="realSystemPhoto portrait"><img src="/real-robot-v2.jpg" alt="A real collaborative robot used with the Comprehensible motion interface"/><figcaption><span>01</span> Collaborative robot</figcaption></figure><figure class="realSystemPhoto lidar"><img src="/real-lidar.png" alt="A LiDAR point cloud showing a real workspace and detected spatial regions"/><figcaption><span>02</span> LiDAR perception and spatial regions</figcaption></figure><figure class="realSystemPhoto portrait"><img src="/real-camera-rig-v2.jpg" alt="A real motorized camera rig orchestrated through a shared timeline"/><figcaption><span>03</span> Multi-axis camera rig</figcaption></figure><figure class="realSystemPhoto"><img src="/tandee-hs-nailing-square.jpg" alt="A Tandee robotic pallet-nailing cell operating an HS head over an XL worktable"/><figcaption><span>04</span> Robotic pallet nailing</figcaption></figure></div></section></section><section class="reliabilityIntro" id="reliability"><div class="shell reliabilityGrid"><p class="sectionNumber">02 / THE FOUNDATION</p><h2>Intelligence makes new automation possible. Reliability and safety make it viable in practice.</h2><p>Comprehensible’s reliability and safety engine sits at the foundation of the orchestration layer. Every input, action and outcome has defined meaning, allowing the platform to check the complete workflow against its safety rules, live sensor readings, and the actual positions and status of connected equipment — before anything moves and throughout testing. In production, the same foundation continuously monitors events across space and time, detects anomalies in real time, and triggers a defined response when conditions change.</p><div class="foundationNote"><span>SPECIFICATION LAYER</span><p>To make these requirements explicit and machine-checkable, we designed our own domain-specific language for workflow and safety specifications. Specifications can be written directly or generated with an LLM, then validated before they can affect physical equipment.</p></div></div><div class="shell foundationEvidence" aria-label="Reliability and safety platform evidence"><section class="evidenceGroup" aria-labelledby="validation-title"><div class="evidenceHeading"><span>BEFORE DEPLOYMENT / VALIDATION</span><h3 id="validation-title">Understand how the machine behaves before trusting it with the job.</h3></div><div class="validationGallery"><figure class="evidenceFrame"><div class="evidenceMedia diagnosticTop"><img src="/reliability-diagnostics.jpg" alt="Time-series joint diagnostics comparing commanded and measured position, velocity and torque"/></div><figcaption><span>01</span> Compare commanded and measured position, velocity and torque over time.</figcaption></figure><figure class="evidenceFrame"><div class="evidenceMedia diagnosticBottom"><img src="/reliability-diagnostics.jpg" alt="Robot joint friction profile plotted from sensed velocity and torque"/></div><figcaption><span>02</span> Expose friction, load and limit behaviour from measured motion.</figcaption></figure><figure class="evidenceFrame"><div class="evidenceMedia"><img src="/reliability-friction-model.jpg" alt="Friction model fitted to measured robot joint telemetry"/></div><figcaption><span>03</span> Fit machine-specific friction models from measured telemetry.</figcaption></figure><figure class="evidenceFrame"><div class="evidenceMedia specMedia"><img src="/reliability-spec.png" alt="A machine-checkable specification linking commanded and measured roll and pitch signals"/></div><figcaption><span>04</span> Express causal requirements as machine-checkable specifications — written directly or generated with an LLM.</figcaption></figure></div></section><section class="evidenceGroup" aria-labelledby="monitoring-title"><div class="evidenceHeading"><span>DURING OPERATION / MONITORING</span><h3 id="monitoring-title">Keep the robots, their surroundings and their history in view.</h3></div><div class="monitoringGallery"><figure class="evidenceFrame workstationFrame"><div class="evidenceMedia"><img src="/reliability-workstation-enhanced.png" alt="A technical workstation showing robot simulation, live telemetry and diagnostic tools"/></div><figcaption><span>05</span> Inspect robot state, telemetry and diagnostic tools together during development and testing.</figcaption></figure><figure class="evidenceFrame pointCloudFrame"><div class="evidenceMedia"><img src="/reliability-point-cloud.png" alt="LiDAR point cloud and camera view used to monitor people, objects and spatial regions"/></div><figcaption><span>06</span> Fuse LiDAR and camera data to monitor people, objects and safety regions in the same physical scene.</figcaption></figure><figure class="evidenceFrame signalMapFrame"><div class="evidenceMedia"><img src="/reliability-signal-map.png" alt="A time-aware spatial map of changing traffic signal states with data and monitoring logic"/></div><figcaption><span>07</span> Replay and inspect events across space and time — here, changing signal states across a road network.</figcaption></figure></div></section></div></section><section class="ctaSection" id="build"><div class="shell ctaInner"><img class="brandLogo" src="/logo.svg" alt="" aria-hidden="true"/><p class="eyebrow light"><span></span> Build with us</p><h2>Physical automation,<br/>made comprehensible.</h2><p>Bring us the process you want to automate. We’re working with early teams to turn high-value, human–robot use cases into reliable operations.</p><a class="contactEmail" href="mailto:admin@swarmis.us?subject=Design%20partner">admin@swarmis.us <span aria-hidden="true">↗</span></a></div></section><footer class="footer shell"><a class="brand" href="#top"><img class="brandLogo" src="/logo.svg" alt="" aria-hidden="true"/><span>Comprehensible</span></a><p>Physical automation, made comprehensible.</p><div><a href="mailto:admin@swarmis.us">admin@swarmis.us</a><span>© 2026 Comprehensible AI</span></div></footer></main><script type="module" src="/_next/static/chunks/index-CGzTkIP-.js" id="_R_" async=""></script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("2:I[\"8c0f216c4604\",[],\"Children\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("3:I[\"593f344dc510\",[],\"GlobalErrorBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("4:I[\"0b874ad30386\",[],\"default\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("5:I[\"593f344dc510\",[],\"ErrorBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("6:I[\"15c18cfaeeff\",[],\"LayoutSegmentProvider\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("7:I[\"8c0f216c4604\",[],\"Slot\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("8:I[\"9276801271d6\",[],\"AppRouterScrollTarget\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("9:I[\"593f344dc510\",[],\"RedirectBoundary\",1]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/_next/static/css/index.BA313Bxd.css\",\"style\"     ]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("0:{\"__route\":\"route:/\",\"__interceptionContext\":null,\"__layoutIds\":[\"layout:/\"],\"__rootLayout\":\"/\",\"__sourcePage\":\"/page\",\"page:/\":\"$L1\",\"layout:/\":[[[[\"$\",\"link\",\"css:/_next/static/css/index.BA313Bxd.css\",{\"rel\":\"stylesheet\",\"precedence\":\"vite-rsc/importer-resources\",\"href\":\"/_next/static/css/index.BA313Bxd.css\",\"data-rsc-css-href\":\"/_next/static/css/index.BA313Bxd.css\"}],\"$undefined\"],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_geist_1l7o1rv __variable_geist_mono_1wmokar\",\"children\":[\"$\",\"$L2\",null,{}]}]}]],null],\"route:/\":[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[[\"$\",\"title\",\"0\",{\"children\":\"Comprehensible — Reliable robotic orchestration for work previously impractical to automate\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Control and orchestration for physical workflows across robots, sensors, AI models and business systems — built for work previously impractical to automate.\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"Reliable robotic orchestration for work previously impractical to automate\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"Control and orchestration for physical workflows across robots, sensors, AI models and business systems.\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:url\",\"content\":\"https://comprehensible.ai\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:site_name\",\"content\":\"Comprehensible\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image\",\"content\":\"https://comprehensible.ai/og-logo.png\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image:alt\",\"content\":\"Comprehensible\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:title\",\"content\":\"Reliable robotic orchestration for work previously impractical to automate\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:description\",\"content\":\"Control and orchestration for physical workflows across robots, sensors, AI models and business systems.\"}],[\"$\",\"meta\",\"14\",{\"name\":\"twitter:image\",\"content\":\"https://comprehensible.ai/og-logo.png\"}],[\"$\",\"link\",\"15\",{\"rel\":\"shortcut icon\",\"href\":\"/favicon.svg\"}],[\"$\",\"link\",\"16\",{\"rel\":\"icon\",\"href\":\"/favicon.svg\"}],[\"$\",\"link\",\"17\",{\"rel\":\"apple-touch-icon\",\"href\":\"/og-logo.png\"}]],[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]],[\"$\",\"$L3\",null,{\"fallback\":\"$4\",\"children\":[\"$\",\"$L5\",null,{\"fallback\":\"$4\",\"children\":[\"$\",\"$L6\",null,{\"providerId\":\"layout:/\",\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L7\",null,{\"id\":\"layout:/\",\"parallelSlots\":\"$undefined\",\"children\":[\"$\",\"$L8\",null,{\"children\":[\"$\",\"$L9\",null,{\"children\":[[\"$\",\"$L6\",null,{\"providerId\":\"page:/\",\"segmentMap\":{\"children\":[\"__PAGE__\"]},\"children\":[\"$\",\"$L7\",null,{\"id\":\"page:/\"}]}],null]}]}]}]}]}]}],null,null],\"__layoutFlags\":{\"layout:/\":\"s\"},\"__artifactCompatibility\":{\"schemaVersion\":1,\"graphVersion\":\"app-route-graph:1177fd80f83fa7b0\",\"deploymentVersion\":\"952054a3-83fa-49ed-a8e9-9eb0a93a828e\",\"appElementsSchemaVersion\":1,\"rscPayloadSchemaVersion\":1,\"rootBoundaryId\":\"/\",\"renderEpoch\":null},\"__renderObservation\":{\"schemaVersion\":1,\"output\":{\"kind\":\"app-rsc\",\"mountedSlotsFingerprint\":null,\"renderEpoch\":null,\"rootBoundaryId\":\"/\",\"routeId\":\"route:/\"},\"completeness\":\"partial\",\"boundaryOutcome\":{\"kind\":\"unknown\"},\"requestApis\":[{\"kind\":\"connection\",\"status\":\"unknown\"},{\"kind\":\"cookies\",\"status\":\"unknown\"},{\"kind\":\"draftMode\",\"status\":\"unknown\"},{\"kind\":\"headers\",\"status\":\"unknown\"},{\"kind\":\"params\",\"status\":\"unknown\"},{\"kind\":\"searchParams\",\"status\":\"unknown\"}],\"dynamicFetches\":[],\"cacheTags\":[\"/\",\"_N_T_/\",\"_N_T_/index\",\"_N_T_/layout\",\"_N_T_/page\"],\"pathTags\":[\"/\"],\"cacheability\":\"unknown\",\"downgrade\":{\"target\":\"freshRender\",\"reasons\":[{\"code\":\"CP_DOWNGRADE_CACHEABILITY_UNKNOWN\",\"target\":\"freshRender\"},{\"code\":\"CP_DOWNGRADE_INCOMPLETE_OBSERVATION\",\"completeness\":\"partial\",\"target\":\"freshRender\"},{\"code\":\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"requestApi\":\"connection\",\"target\":\"freshRender\"},{\"code\":\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"requestApi\":\"cookies\",\"target\":\"freshRender\"},{\"code\":\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"requestApi\":\"draftMode\",\"target\":\"freshRender\"},{\"code\":\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"requestApi\":\"headers\",\"target\":\"freshRender\"},{\"code\":\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"requestApi\":\"params\",\"target\":\"freshRender\"},{\"code\":\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"requestApi\":\"searchParams\",\"target\":\"freshRender\"}],\"fallback\":{\"kind\":\"breakerFallback\",\"code\":\"CP_PRIVATE_DYNAMIC_DOWNGRADE\",\"mode\":\"renderFresh\",\"scope\":\"affectedOutput\",\"fields\":{\"reasonCodes\":[\"CP_DOWNGRADE_CACHEABILITY_UNKNOWN\",\"CP_DOWNGRADE_INCOMPLETE_OBSERVATION\",\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\",\"CP_DOWNGRADE_UNKNOWN_REQUEST_API\"],\"target\":\"freshRender\"}},\"isPublicCacheCandidate\":false}}}\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/logo.svg\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/orchestration-v3.png\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("1:[\"$\",\"main\",null,{\"id\":\"top\",\"children\":[[\"$\",\"nav\",null,{\"className\":\"nav shell\",\"aria-label\":\"Primary navigation\",\"children\":[[\"$\",\"a\",null,{\"className\":\"brand\",\"href\":\"#top\",\"aria-label\":\"Comprehensible home\",\"children\":[[\"$\",\"img\",null,{\"className\":\"brandLogo\",\"src\":\"/logo.svg\",\"alt\":\"\",\"aria-hidden\":\"true\"}],[\"$\",\"span\",null,{\"children\":\"Comprehensible\"}]]}],[\"$\",\"div\",null,{\"className\":\"navLinks\",\"children\":[[\"$\",\"a\",null,{\"href\":\"#product\",\"children\":\"Product\"}],[\"$\",\"a\",null,{\"href\":\"#reliability\",\"children\":\"Reliability\"}],[\"$\",\"a\",null,{\"href\":\"#build\",\"children\":\"Build with us\"}]]}],[\"$\",\"a\",null,{\"className\":\"navCta\",\"href\":\"mailto:admin@swarmis.us?subject=Tell%20us%20about%20your%20process\",\"children\":[\"Talk to us \",[\"$\",\"span\",null,{\"aria-hidden\":\"true\",\"children\":\"↗\"}]]}]]}],[\"$\",\"section\",null,{\"className\":\"hero shell\",\"children\":[[\"$\",\"p\",null,{\"className\":\"eyebrow\",\"children\":[[\"$\",\"span\",null,{}],\" Physical automation, made comprehensible\"]}],[\"$\",\"h1\",null,{\"children\":[\"Reliable robotic orchestration\",[\"$\",\"br\",null,{}],[\"$\",\"em\",null,{\"children\":\"for work previously impractical to automate.\"}]]}],[\"$\",\"div\",null,{\"className\":\"heroBottom\",\"children\":[[\"$\",\"p\",null,{\"className\":\"heroStatement\",\"children\":\"Comprehensible is a control and orchestration system for physical workflows across robots, sensors, AI models and business systems — with safety, monitoring and recovery built in.\"}],[\"$\",\"div\",null,{\"className\":\"heroDetail\",\"children\":[[\"$\",\"p\",null,{\"children\":\"Better perception and decision-making are opening automation to changing, lower-volume work — from smaller manufacturers and creative studios to construction sites and farms. Comprehensible makes these systems practical to set up and adapt without a dedicated team of robotics specialists.\"}],[\"$\",\"a\",null,{\"className\":\"button primary\",\"href\":\"#product\",\"children\":[\"Explore the product \",[\"$\",\"span\",null,{\"aria-hidden\":\"true\",\"children\":\"↓\"}]]}]]}]]}]]}],[\"$\",\"section\",null,{\"className\":\"shift\",\"id\":\"product\",\"children\":[\"$\",\"div\",null,{\"className\":\"shell shiftGrid\",\"children\":[[\"$\",\"p\",null,{\"className\":\"sectionNumber\",\"children\":\"01 / THE PRODUCT\"}],[\"$\",\"h2\",null,{\"children\":\"Automation no longer has to mean a rigid, single-purpose production line.\"}],[\"$\",\"p\",null,{\"children\":\"From device drivers and motion control to perception and workflow logic, Comprehensible connects the full stack into adaptable workflows. Smaller manufacturers, workshops, wineries, breweries and creative teams can design, test and operate changing jobs without creating a custom integration each time.\"}]]}]}],[\"$\",\"section\",null,{\"className\":\"product shell\",\"children\":[[\"$\",\"div\",null,{\"className\":\"compactFeatures\",\"aria-label\":\"Product capabilities\",\"children\":[[\"$\",\"div\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"+\"}],[\"$\",\"h3\",null,{\"children\":\"Compose the whole workflow\"}],[\"$\",\"p\",null,{\"children\":\"Connect live sensor data, spatial understanding, decisions and robot actions.\"}]]}],[\"$\",\"div\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"+\"}],[\"$\",\"h3\",null,{\"children\":\"Keep the real system in view\"}],[\"$\",\"p\",null,{\"children\":\"Observe connected hardware while designing, testing and adjusting the job.\"}]]}],[\"$\",\"div\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"+\"}],[\"$\",\"h3\",null,{\"children\":\"Build the interface for the task\"}],[\"$\",\"p\",null,{\"children\":\"Combine the controls, status, simulation and timing that operators actually need.\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"productExampleHeader\",\"children\":[[\"$\",\"span\",null,{\"children\":\"REAL-WORLD EXAMPLE\"}],[\"$\",\"h3\",null,{\"children\":\"Bringing robotics into a product filming studio\"}]]}],[\"$\",\"div\",null,{\"className\":\"productGallery\",\"children\":[[\"$\",\"figure\",null,{\"className\":\"productFrame productFrameMain\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/orchestration-v3.png\",\"alt\":\"Comprehensible orchestrator for a real product filming studio, connecting live LiDAR data, scene recognition, a user prompt, camera trajectory and robot execution while showing current hardware state\"}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"01\"}],\" Design the workflow while observing the current state of connected hardware\"]}]]}],[\"$\",\"div\",null,{\"className\":\"productGallerySide\",\"children\":[\"$La\",\"$Lb\"]}]]}],\"$Lc\"]}],\"$Ld\",\"$Le\",\"$Lf\"]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/motion-orchestrator.png\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/multi-device-timeline.png\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/real-robot-v2.jpg\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/real-lidar.png\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/real-camera-rig-v2.jpg\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/tandee-hs-nailing-square.jpg\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/reliability-diagnostics.jpg\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/reliability-friction-model.jpg\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/reliability-spec.png\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("a:[\"$\",\"figure\",null,{\"className\":\"productFrame\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/motion-orchestrator.png\",\"alt\":\"Comprehensible interface showing a robot arm, a natural-language motion assistant, the generated motion program and its timeline\"}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"02\"}],\" Natural-language robot motion, visualized and editable\"]}]]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("b:[\"$\",\"figure\",null,{\"className\":\"productFrame\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/multi-device-timeline.png\",\"alt\":\"A task-specific interface created in Comprehensible, combining a multi-device simulation, live status and a shared motion timeline\"}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"03\"}],\" A task-specific control interface built in the platform\"]}]]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("c:[\"$\",\"section\",null,{\"className\":\"realSystems\",\"aria-labelledby\":\"real-systems-title\",\"children\":[[\"$\",\"div\",null,{\"className\":\"realSystemsIntro\",\"children\":[[\"$\",\"span\",null,{\"children\":\"CONNECTED HARDWARE / REAL SYSTEMS\"}],[\"$\",\"h3\",null,{\"id\":\"real-systems-title\",\"children\":\"The interface is connected to real machines and real sensor data.\"}]]}],[\"$\",\"div\",null,{\"className\":\"realSystemsGrid\",\"children\":[[\"$\",\"figure\",null,{\"className\":\"realSystemPhoto portrait\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/real-robot-v2.jpg\",\"alt\":\"A real collaborative robot used with the Comprehensible motion interface\"}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"01\"}],\" Collaborative robot\"]}]]}],[\"$\",\"figure\",null,{\"className\":\"realSystemPhoto lidar\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/real-lidar.png\",\"alt\":\"A LiDAR point cloud showing a real workspace and detected spatial regions\"}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"02\"}],\" LiDAR perception and spatial regions\"]}]]}],[\"$\",\"figure\",null,{\"className\":\"realSystemPhoto portrait\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/real-camera-rig-v2.jpg\",\"alt\":\"A real motorized camera rig orchestrated through a shared timeline\"}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"03\"}],\" Multi-axis camera rig\"]}]]}],[\"$\",\"figure\",null,{\"className\":\"realSystemPhoto\",\"children\":[[\"$\",\"img\",null,{\"src\":\"/tandee-hs-nailing-square.jpg\",\"alt\":\"A Tandee robotic pallet-nailing cell operating an HS head over an XL worktable\"}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"04\"}],\" Robotic pallet nailing\"]}]]}]]}]]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("d:[\"$\",\"section\",null,{\"className\":\"reliabilityIntro\",\"id\":\"reliability\",\"children\":[[\"$\",\"div\",null,{\"className\":\"shell reliabilityGrid\",\"children\":[[\"$\",\"p\",null,{\"className\":\"sectionNumber\",\"children\":\"02 / THE FOUNDATION\"}],[\"$\",\"h2\",null,{\"children\":\"Intelligence makes new automation possible. Reliability and safety make it viable in practice.\"}],[\"$\",\"p\",null,{\"children\":\"Comprehensible’s reliability and safety engine sits at the foundation of the orchestration layer. Every input, action and outcome has defined meaning, allowing the platform to check the complete workflow against its safety rules, live sensor readings, and the actual positions and status of connected equipment — before anything moves and throughout testing. In production, the same foundation continuously monitors events across space and time, detects anomalies in real time, and triggers a defined response when conditions change.\"}],[\"$\",\"div\",null,{\"className\":\"foundationNote\",\"children\":[[\"$\",\"span\",null,{\"children\":\"SPECIFICATION LAYER\"}],[\"$\",\"p\",null,{\"children\":\"To make these requirements explicit and machine-checkable, we designed our own domain-specific language for workflow and safety specifications. Specifications can be written directly or generated with an LLM, then validated before they can affect physical equipment.\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"shell foundationEvidence\",\"aria-label\":\"Reliability and safety platform evidence\",\"children\":[[\"$\",\"section\",null,{\"className\":\"evidenceGroup\",\"aria-labelledby\":\"validation-title\",\"children\":[[\"$\",\"div\",null,{\"className\":\"evidenceHeading\",\"children\":[[\"$\",\"span\",null,{\"children\":\"BEFORE DEPLOYMENT / VALIDATION\"}],[\"$\",\"h3\",null,{\"id\":\"validation-title\",\"children\":\"Understand how the machine behaves before trusting it with the job.\"}]]}],[\"$\",\"div\",null,{\"className\":\"validationGallery\",\"children\":[[\"$\",\"figure\",null,{\"className\":\"evidenceFrame\",\"children\":[[\"$\",\"div\",null,{\"className\":\"evidenceMedia diagnosticTop\",\"children\":[\"$\",\"img\",null,{\"src\":\"/reliability-diagnostics.jpg\",\"alt\":\"Time-series joint diagnostics comparing commanded and measured position, velocity and torque\"}]}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"01\"}],\" Compare commanded and measured position, velocity and torque over time.\"]}]]}],[\"$\",\"figure\",null,{\"className\":\"evidenceFrame\",\"children\":[[\"$\",\"div\",null,{\"className\":\"evidenceMedia diagnosticBottom\",\"children\":[\"$\",\"img\",null,{\"src\":\"/reliability-diagnostics.jpg\",\"alt\":\"Robot joint friction profile plotted from sensed velocity and torque\"}]}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"02\"}],\" Expose friction, load and limit behaviour from measured motion.\"]}]]}],[\"$\",\"figure\",null,{\"className\":\"evidenceFrame\",\"children\":[[\"$\",\"div\",null,{\"className\":\"evidenceMedia\",\"children\":[\"$\",\"img\",null,{\"src\":\"/reliability-friction-model.jpg\",\"alt\":\"Friction model fitted to measured robot joint telemetry\"}]}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"03\"}],\" Fit machine-specific friction models from measured telemetry.\"]}]]}],[\"$\",\"figure\",null,{\"className\":\"evidenceFrame\",\"children\":[[\"$\",\"div\",null,{\"className\":\"evidenceMedia specMedia\",\"children\":[\"$\",\"img\",null,{\"src\":\"/reliability-spec.png\",\"alt\":\"A machine-checkable specification linking commanded and measured roll and pitch signals\"}]}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"04\"}],\" Express causal requirements as machine-checkable specifications — written directly or generated with an LLM.\"]}]]}]]}]]}],[\"$\",\"section\",null,{\"className\":\"evidenceGroup\",\"aria-labelledby\":\"monitoring-title\",\"children\":[[\"$\",\"div\",null,{\"className\":\"evidenceHeading\",\"children\":[[\"$\",\"span\",null,{\"children\":\"DURING OPERATION / MONITORING\"}],[\"$\",\"h3\",null,{\"id\":\"monitoring-title\",\"children\":\"Keep the robots, their surroundings and their history in view.\"}]]}],[\"$\",\"div\",null,{\"className\":\"monitoringGallery\",\"children\":[[\"$\",\"figure\",null,{\"className\":\"evidenceFrame workstationFrame\",\"children\":[\"$L10\",\"$L11\"]}],\"$L12\",\"$L13\"]}]]}]]}]]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("e:[\"$\",\"section\",null,{\"className\":\"ctaSection\",\"id\":\"build\",\"children\":[\"$\",\"div\",null,{\"className\":\"shell ctaInner\",\"children\":[[\"$\",\"img\",null,{\"className\":\"brandLogo\",\"src\":\"/logo.svg\",\"alt\":\"\",\"aria-hidden\":\"true\"}],[\"$\",\"p\",null,{\"className\":\"eyebrow light\",\"children\":[[\"$\",\"span\",null,{}],\" Build with us\"]}],[\"$\",\"h2\",null,{\"children\":[\"Physical automation,\",[\"$\",\"br\",null,{}],\"made comprehensible.\"]}],[\"$\",\"p\",null,{\"children\":\"Bring us the process you want to automate. We’re working with early teams to turn high-value, human–robot use cases into reliable operations.\"}],[\"$\",\"a\",null,{\"className\":\"contactEmail\",\"href\":\"mailto:admin@swarmis.us?subject=Design%20partner\",\"children\":[\"admin@swarmis.us \",[\"$\",\"span\",null,{\"aria-hidden\":\"true\",\"children\":\"↗\"}]]}]]}]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("f:[\"$\",\"footer\",null,{\"className\":\"footer shell\",\"children\":[[\"$\",\"a\",null,{\"className\":\"brand\",\"href\":\"#top\",\"children\":[[\"$\",\"img\",null,{\"className\":\"brandLogo\",\"src\":\"/logo.svg\",\"alt\":\"\",\"aria-hidden\":\"true\"}],[\"$\",\"span\",null,{\"children\":\"Comprehensible\"}]]}],[\"$\",\"p\",null,{\"children\":\"Physical automation, made comprehensible.\"}],[\"$\",\"div\",null,{\"children\":[[\"$\",\"a\",null,{\"href\":\"mailto:admin@swarmis.us\",\"children\":\"admin@swarmis.us\"}],[\"$\",\"span\",null,{\"children\":\"© 2026 Comprehensible AI\"}]]}]]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/reliability-workstation-enhanced.png\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/reliability-point-cloud.png\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push(":HL[\"/reliability-signal-map.png\",\"image\"]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("10:[\"$\",\"div\",null,{\"className\":\"evidenceMedia\",\"children\":[\"$\",\"img\",null,{\"src\":\"/reliability-workstation-enhanced.png\",\"alt\":\"A technical workstation showing robot simulation, live telemetry and diagnostic tools\"}]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("11:[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"05\"}],\" Inspect robot state, telemetry and diagnostic tools together during development and testing.\"]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("12:[\"$\",\"figure\",null,{\"className\":\"evidenceFrame pointCloudFrame\",\"children\":[[\"$\",\"div\",null,{\"className\":\"evidenceMedia\",\"children\":[\"$\",\"img\",null,{\"src\":\"/reliability-point-cloud.png\",\"alt\":\"LiDAR point cloud and camera view used to monitor people, objects and spatial regions\"}]}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"06\"}],\" Fuse LiDAR and camera data to monitor people, objects and safety regions in the same physical scene.\"]}]]}]\n")</script><script>((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).rsc.push("13:[\"$\",\"figure\",null,{\"className\":\"evidenceFrame signalMapFrame\",\"children\":[[\"$\",\"div\",null,{\"className\":\"evidenceMedia\",\"children\":[\"$\",\"img\",null,{\"src\":\"/reliability-signal-map.png\",\"alt\":\"A time-aware spatial map of changing traffic signal states with data and monitoring logic\"}]}],[\"$\",\"figcaption\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"07\"}],\" Replay and inspect events across space and time — here, changing signal states across a road network.\"]}]]}]\n")</script><script>Object.assign(((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}),{"initialCacheKind":"static"});((self[Symbol.for("vinext.navigationRuntime")]??={bootstrap:{routeManifest:null},functions:{}}).bootstrap.rsc??={rsc:[]}).done=true</script></body></html>
+[event.sequence.30s:failed_handoff]
+handoff.grasped -> load_change -> handoff.early_release</code></pre>
+                    </div>
+                    <p class="sample-caption">Robotic handoff monitoring · Combining anomaly detection, state and sequence into one explainable failure condition</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-part" aria-labelledby="execution-title">
+            <div class="part-index" aria-hidden="true">02</div>
+            <div class="part-copy">
+                <p class="part-label">Testing, verification and monitoring</p>
+                <h3 id="execution-title">From regression testing to real-time monitoring</h3>
+                <p>
+                    Use specifications to test recorded runs, catch regressions after every commit, verify edge and tail cases, and continuously monitor live systems. Developers can move quickly without changing what “correct” means between development and operation.
+                </p>
+                <dl class="term-definitions">
+                    <div>
+                        <dt>Verification</dt>
+                        <dd>Checks the system against its specification — not just familiar test scenarios — including edge conditions and low-probability tail cases.</dd>
+                    </div>
+                    <div>
+                        <dt>Anomaly detection</dt>
+                        <dd>Finds behavior that differs significantly from what is normal, exposing possible failures no one knew to name in advance.</dd>
+                    </div>
+                </dl>
+                <p class="execution-proof-copy">
+                    Time, spatial, interval and event indexes narrow each search to the relevant data, keeping it fast as datasets grow. Distribution-shift detection identifies when the statistical behavior of data changes over time. Our optimized Kolmogorov–Smirnov test provides a transparent, low-latency alternative to model-heavy approaches.
+                </p>
+            </div>
+            <div class="product-visual lifecycle-visual" aria-label="Testing, regression testing, verification and continuous monitoring across recorded and live data">
+                <div class="lifecycle-grid">
+                    <div class="lifecycle-stage">
+                        <span>01</span>
+                        <strong>Testing</strong>
+                        <small>Check recorded runs</small>
+                    </div>
+                    <div class="lifecycle-stage">
+                        <span>02</span>
+                        <strong>Regression</strong>
+                        <small>Recheck every commit</small>
+                    </div>
+                    <div class="lifecycle-stage">
+                        <span>03</span>
+                        <strong>Verification</strong>
+                        <small>Probe edge and tail cases</small>
+                    </div>
+                    <div class="lifecycle-stage">
+                        <span>04</span>
+                        <strong>Monitoring</strong>
+                        <small>Evaluate live systems continuously</small>
+                    </div>
+                </div>
+                <div class="benchmark-proof">
+                    <p>Measured CPU distribution-shift detection</p>
+                    <div class="benchmark-row">
+                        <strong>64.2B</strong>
+                        <span>events per second</span>
+                        <small>Memory · uncompressed stream · CPU-bound</small>
+                    </div>
+                    <div class="benchmark-row">
+                        <strong>5.33B</strong>
+                        <span>events per second</span>
+                        <small>SSD · Iceberg · I/O-bound</small>
+                    </div>
+                    <div class="benchmark-row">
+                        <strong>533.3M</strong>
+                        <span>events per second</span>
+                        <small>AWS S3 · Iceberg · network-bound</small>
+                    </div>
+                    <p class="benchmark-hardware">12-core Intel i7</p>
+                </div>
+                <div class="latency-proof">
+                    <div>
+                        <strong>4 μs</strong>
+                        <span>Our implementation</span>
+                    </div>
+                    <i>vs.</i>
+                    <div>
+                        <strong>2,000 μs</strong>
+                        <span>scikit-learn</span>
+                    </div>
+                    <p>Kolmogorov–Smirnov test · 10K samples · identical hardware · 500× measured speedup</p>
+                </div>
+                <p class="lifecycle-indexes">GPU-accelerated indexes · Time · Space · Intervals · Events</p>
+            </div>
+        </section>
+
+        <section class="product-part" aria-labelledby="visualization-title">
+            <div class="part-index" aria-hidden="true">03</div>
+            <div class="part-copy">
+                <p class="part-label">Investigation and response</p>
+                <h3 class="response-title" id="visualization-title">
+                    <span>See what happened.</span>
+                    <span>Understand why.</span>
+                    <span>Recover safely.</span>
+                </h3>
+                <p>
+                    When testing, verification or live monitoring finds a problem, we show exactly what happened, why it was flagged and which expectation it violated. Inspect the evidence in a custom interface generated from the query and specification, or in Foxglove or Rerun. Trigger an automatic or human-approved response, confirm recovery, and preserve what engineers learn in the specification.
+                </p>
+                <ul class="part-details">
+                    <li>Link every result to the data and expectation that produced it</li>
+                    <li>Generate 2D, 3D and timeline views from queries and specifications</li>
+                    <li>Inspect the same evidence in Foxglove or Rerun</li>
+                    <li>Run a defined response — stop, enter safe mode, retry or notify an operator</li>
+                    <li>Confirm that expected behavior has been restored</li>
+                </ul>
+            </div>
+            <div class="product-visual evidence-gallery" aria-label="Real diagnostic, model extraction and Foxglove investigation views">
+                <figure class="evidence-primary">
+                    <img src="/images/reliability-diagnostics.webp" alt="Time-series diagnostics for robot joint position, velocity and torque, followed by a friction profile" width="1724" height="3072" loading="lazy" decoding="async">
+                    <figcaption>Time-series diagnostics · Position, velocity and torque</figcaption>
+                </figure>
+                <div class="evidence-stack">
+                    <figure>
+                        <img src="/images/friction-model.webp" alt="Feature-extracted friction model showing raw telemetry, binned medians, a sliding friction fit and stiction peaks" width="2048" height="1415" loading="lazy" decoding="async">
+                        <figcaption>Evidence to model · Extracted friction behavior</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/images/foxglove-investigation.webp" alt="Robot telemetry being investigated in Foxglove on a workstation" width="2520" height="1420" loading="lazy" decoding="async">
+                        <figcaption>Live investigation · Foxglove</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="closing" id="contact" aria-labelledby="closing-title">
+        <div class="closing-inner">
+            <img class="closing-logo" src="/Logo.svg" alt="" width="50" height="29" aria-hidden="true">
+            <p class="closing-kicker">Build with us</p>
+            <h2 id="closing-title">
+                <span class="closing-title-line"><span>Physical AI</span> <span>reliability.</span></span>
+                <span class="closing-title-line"><span>Made</span> <span>comprehensible.</span></span>
+            </h2>
+            <p class="closing-copy">
+                Bring us the behavior your machines must get right. We’ll help you define it, test and verify it, monitor it in real time, and recover safely when behavior changes unexpectedly.
+            </p>
+            <a class="closing-email" href="mailto:admin@swarmis.us?subject=Physical%20AI%20reliability">
+                <span>admin@swarmis.us</span>
+                <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+        <footer class="site-footer">
+            <img src="/Logo.svg" alt="" width="38" height="22" aria-hidden="true">
+            <span>© 2026 Comprehensible AI</span>
+        </footer>
+    </section>
+</main>
+
+</body>
+</html>
