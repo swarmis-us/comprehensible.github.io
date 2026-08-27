@@ -6,7 +6,7 @@
     <meta name="description" content="Reliability infrastructure for physical AI."/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <title>Comprehensible — Reliability for Physical AI</title>
-  <link rel="stylesheet" crossorigin href="/assets/index-CQd-TdAY.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-Dm3ellxu.css">
 </head>
 <body>
 <main>
@@ -63,9 +63,11 @@
             <div class="part-copy composition-copy">
                 <p class="part-label">Specification</p>
                 <h3 id="specification-title">Reliability needs answers you can reproduce, explain and verify</h3>
-                <p>
-                    An LLM helps engineers turn plain language into a formal, executable description of expected behavior — a specification. Specifications can combine temporal and spatial patterns, probabilistic methods, anomaly detection and learned system dynamics. At runtime, the specification — not the LLM — evaluates the data, so results are reproducible and verifiable. The specification is also the explanation: every result traces back to the definitions, relationships and data that produced it.
-                </p>
+                <div class="part-prose">
+                    <p>Engineers describe expected behavior in plain language. An AI assistant helps translate it into a specification: a precise, reviewable definition that can be applied to recorded and live data.</p>
+                    <p>A specification can capture patterns across time and space, statistical methods, anomaly detection and learned dynamics.</p>
+                    <p>The system evaluates recorded or live data against the specification without relying on AI, so the same data always produces the same result. Every finding links back to the relevant parts of the specification and source data, showing engineers what was detected and why.</p>
+                </div>
                 <ul class="part-details">
                     <li>Compose simple definitions into complex behaviors</li>
                     <li>Inspect every intermediate definition and relationship</li>
@@ -214,14 +216,13 @@ motion.started -> motor_load -> motion.incomplete</code></pre>
                     <span>Recover safely.</span>
                 </h3>
                 <p>
-                    When testing, verification or live monitoring finds a problem, we show exactly what happened, why it was flagged and which expectation it violated. Inspect the evidence in a custom interface generated from the query and specification, or in Foxglove or Rerun. Trigger an automatic or human-approved response, confirm recovery, and preserve what engineers learn in the specification.
+                    Comprehensible shows what happened, why it was flagged and which expectation it violated. It generates an incident-specific view from the query and specification, then helps teams trigger an automatic or human-approved response and confirm recovery.
                 </p>
                 <ul class="part-details">
-                    <li>Link every result to the data and expectation that produced it</li>
-                    <li>Generate 2D, 3D and timeline views from queries and specifications</li>
-                    <li>Inspect the same evidence in Foxglove or Rerun</li>
-                    <li>Run a defined response — stop, enter safe mode, retry or notify an operator</li>
-                    <li>Confirm that expected behavior has been restored</li>
+                    <li>See what the machine sensed and did before, during and after an incident</li>
+                    <li>Compare what happened with expected behavior and similar past runs</li>
+                    <li>Turn what the team learned into regression tests and real-time monitoring</li>
+                    <li>Use existing recovery systems to respond automatically or with human approval</li>
                 </ul>
             </div>
             <div class="product-visual evidence-gallery" aria-label="Real diagnostic, model extraction and Foxglove investigation views">
@@ -238,6 +239,69 @@ motion.started -> motor_load -> motion.incomplete</code></pre>
                         <img src="/images/foxglove-investigation.webp" alt="Robot telemetry being investigated in Foxglove on a workstation" width="2520" height="1420" loading="lazy" decoding="async">
                         <figcaption>Field investigation · Foxglove</figcaption>
                     </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-part" aria-labelledby="workflow-title">
+            <div class="part-index" aria-hidden="true">04</div>
+            <div class="part-copy">
+                <p class="part-label">Team interoperability</p>
+                <h3 class="interop-title" id="workflow-title">
+                    <span>One source of truth.</span>
+                    <span>Familiar tools for</span>
+                    <span>every team.</span>
+                </h3>
+                <p>
+                    Reliability crosses development, field operations, support and leadership. Comprehensible gives each team a familiar interface while keeping everyone aligned on what should happen, what actually happened, what was decided and whether the system recovered.
+                </p>
+                <ul class="part-details">
+                    <li>Write specifications and investigate in the Comprehensible VS Code extension, with MCP-assisted authoring</li>
+                    <li>Review sensor data and robot state on the same timeline in Foxglove or Rerun</li>
+                    <li>Share incident status, evidence and actions in a team view</li>
+                </ul>
+            </div>
+            <div class="product-visual architecture-map" role="img" aria-label="Recorded and live robot data flows through shared Comprehensible infrastructure into the VS Code extension and incident management portal. Both interfaces forward generated investigation layouts to Foxglove or Rerun for visualization.">
+                <div class="architecture-layer architecture-visualization">
+                    <span class="architecture-label">Visualization</span>
+                    <div class="architecture-card architecture-card-dark">
+                        <strong>Foxglove · Rerun</strong>
+                        <small>Render the generated investigation layout</small>
+                    </div>
+                </div>
+                <div class="architecture-layout-flow" aria-hidden="true">
+                    <span><b>↑</b> Forward generated layout</span>
+                    <span><b>↑</b> Forward generated layout</span>
+                </div>
+                <div class="architecture-layer">
+                    <span class="architecture-label">Access</span>
+                    <div class="architecture-routes">
+                        <div class="architecture-card">
+                            <span>Robotics engineering · Reliability</span>
+                            <strong>VS Code extension</strong>
+                            <small>Define · Test · Investigate</small>
+                        </div>
+                        <div class="architecture-card">
+                            <span>Reliability · Management</span>
+                            <strong>Incident management portal</strong>
+                            <small>Review · Decide · Recover</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="architecture-connector architecture-connector-split" aria-hidden="true"><span>↑</span><span>↑</span></div>
+                <div class="architecture-layer">
+                    <span class="architecture-label">Infrastructure</span>
+                    <div class="architecture-card architecture-card-wide">
+                        <strong>Shared Comprehensible infrastructure</strong>
+                        <small>Queries · Specifications · Findings · Layouts · Recovery actions</small>
+                    </div>
+                </div>
+                <div class="architecture-connector" aria-hidden="true"><span>↑</span></div>
+                <div class="architecture-layer architecture-data">
+                    <span class="architecture-label">Data</span>
+                    <div class="architecture-card architecture-card-wide">
+                        <strong>Recorded runs · Live robot data</strong>
+                    </div>
                 </div>
             </div>
         </section>
